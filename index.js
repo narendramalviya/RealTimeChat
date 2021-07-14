@@ -2,7 +2,7 @@ const express = require("express");
 const socket = require("socket.io");
 
 var app = express();
-
+app.get('/',(req,res)=> res.send('hyyy'));
 var server = app.listen(4000, function () {
   console.log("Listening to Port 4000");
 });
